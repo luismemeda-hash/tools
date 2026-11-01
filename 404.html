@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>个人工具箱</title>
+<link rel="canonical" href="https://8001-agqzl4enz346habtubgbzvisje.instabox.tech/">
+<meta http-equiv="refresh" content="0; url=https://8001-agqzl4enz346habtubgbzvisje.instabox.tech/">
+<script>
+(function () {
+  var target = "https://8001-agqzl4enz346habtubgbzvisje.instabox.tech";
+  var path = window.location.pathname;
+  // 在 <用户名>.github.io/<仓库名>/ 下访问时，去掉第一段仓库名；
+  // 用自己域名访问时，路径原样保留（/files、/todos 等都能跳对）。
+  if (window.location.hostname.endsWith(".github.io")) {
+    var parts = path.split("/").filter(Boolean);
+    path = parts.length > 1 ? "/" + parts.slice(1).join("/") : "/";
+  }
+  window.location.replace(target + path + window.location.search);
+})();
+</script>
+</head>
+<body>
+<p>正在打开个人工具箱……如果没有自动跳转，请点这里：<a href="https://8001-agqzl4enz346habtubgbzvisje.instabox.tech/">打开工具箱</a></p>
+</body>
+</html>

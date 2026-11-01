@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>个人工具箱</title>
+<script>
+(function () {
+  var target = "https://8001-agqzl4enz346habtubgbzvisje.instabox.tech";
+  var path = window.location.pathname;
+  // GitHub Pages 对不存在的路径会返回这个 404 页，脚本把路径原样带到工具箱，
+  // 所以 tools.你的域名/files、/todos 这类地址也能跳对。
+  if (window.location.hostname.endsWith(".github.io")) {
+    var parts = path.split("/").filter(Boolean);
+    path = parts.length > 1 ? "/" + parts.slice(1).join("/") : "/";
+  }
+  window.location.replace(target + path + window.location.search);
+})();
+</script>
+</head>
+<body>
+<p>正在打开个人工具箱……如果没有自动跳转，请点这里：<a href="https://8001-agqzl4enz346habtubgbzvisje.instabox.tech/">打开工具箱</a></p>
+</body>
+</html>
